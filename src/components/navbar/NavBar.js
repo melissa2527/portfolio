@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './navbar.scss';
 import {Link} from 'react-router-dom';
 import {Button} from '../Button';
@@ -7,7 +7,8 @@ export const NavBar = () => {
     const [clicked, setClicked] = useState(false);
     const [button, setButton] = useState(true);
 
-    const closeMenu = () => setClicked(false);
+    const handleClick = () => {setClicked(!clicked)};
+    const closeMenuMobile = () => setClicked(false);
 
     const showButton = () => {
         if(window.innerWidth <= 960) {
@@ -17,31 +18,35 @@ export const NavBar = () => {
         }
     }
 
+    useEffect(() => {
+        showButton();
+    }, []);
+
     window.addEventListener('resize', showButton);
 
     return (
-        <div>
+        <>
             <nav className='navbar'>
                 <div className='navbar-container'>
-                    <Link to='/' className='navbar-logo'>
+                    <Link to='/' className='navbar-logo' onClick={closeMenuMobile}>
                         <img src='img/logo.jpg' alt=''/>
                     </Link>
-                    <div className='menu-icon' onClick={() => setClicked(!clicked)}>
-                        <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                    <div className='menu-icon' onClick={handleClick}>
+                        <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}/>
                     </div>
                     <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-link' onClick={closeMenu}>
+                            <Link to='/' className='nav-link' onClick={closeMenuMobile}>
                                 Home
                             </Link>
                         </li>
-                        <li>
-                            <Link to='/projects' className='nav-link' onClick={closeMenu}>
+                        <li className='nav-item'>
+                            <Link to='/projects' className='nav-link' onClick={closeMenuMobile}>
                                 Projects
                             </Link>
                         </li>
-                        <li>
-                            <Link to='/contact' className='nav-link' onClick={closeMenu}>
+                        <li className='nav-item'>
+                            <Link to='/contact' className='nav-link' onClick={closeMenuMobile}>
                                 Contact
                             </Link>
                         </li>
@@ -49,6 +54,6 @@ export const NavBar = () => {
                     {button && <Button buttonSytle='btn--outline'>More Info</Button>}
                 </div>
             </nav>
-        </div>
+        </>
     )
 }
