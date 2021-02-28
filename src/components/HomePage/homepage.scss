@@ -1,0 +1,77 @@
+.homepage-container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1, h2 {
+        color: whitesmoke;
+        text-shadow: 5px 5px 10px #232323;
+        padding-right: 5rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    h1 {
+        font-size: 5rem;
+        padding-top: 20rem;
+        box-shadow: 2px 2px 2px #54BE90;
+    }
+
+    h2 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    @media screen and (orientation: portrait) {
+        h1 {
+            padding-top: 15rem;
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+.circles {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: #232323;
+    height: 50vh;
+}
+.circles h3 {
+    align-content: center;
+    justify-content: center;
+    color: #54BE90;
+}
+.circles p {
+    color: white;
+    padding: 5px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+.semicircle {
+    display: flex;
+    background-color: #232323;
+    flex-direction: row;
+}
+.half {
+    color: white;
+    height: 125px;
+    width: 250px;
+    border-radius: 0 0 125px 125px;
+    justify-items: flex-start; 
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: #232323;
+}

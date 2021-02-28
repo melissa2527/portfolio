@@ -29,7 +29,7 @@ export const NavBar = () => {
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMenuMobile}>
-                        <img src='img/logo.jpg' alt=''/>
+                        <img src='img/logo.png' alt='' height={50}/>
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}/>
