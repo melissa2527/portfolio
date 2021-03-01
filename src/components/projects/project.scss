@@ -1,0 +1,22 @@
+.card {
+    width: 25rem;
+
+    .card-img {
+        width: 25rem;
+
+    }
+    .card-img:hover {
+        transform: scale(1.1);
+    }
+
+    #site, #code {
+        color: #232323;
+        font-size: 8rem;
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}

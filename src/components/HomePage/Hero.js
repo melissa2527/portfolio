@@ -15,7 +15,7 @@ export const Hero = () => {
                 <h2>Web Developer</h2>
                 <div className='hero-btns'>
                     <Button 
-                        className='btns'
+                        className='btn'
                         buttonStyle='btn--outline'
                         buttonSize='btn--lge'
                     >

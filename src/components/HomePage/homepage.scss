@@ -1,14 +1,14 @@
 .homepage-container {
     height: 100vh;
     width: 100vw;
-    background-image: url('./background.jpg');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url('./background.jpg');
+    // background-image: url('./background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     h1, h2 {
-        color: whitesmoke;
-        text-shadow: 5px 5px 10px #232323;
+        text-shadow: 5px 5px #232323;
         padding-right: 5rem;
         display: flex;
         justify-content: flex-end;
@@ -16,16 +16,29 @@
 
     h1 {
         font-size: 5rem;
+        color: whitesmoke;
         padding-top: 20rem;
-        box-shadow: 2px 2px 2px #54BE90;
+        box-shadow: 2px 2px #54BE90;
     }
 
     h2 {
+        color: #54BE90;
         margin-top: 1rem;
         font-size: 2rem;
     }
 
-    @media screen and (orientation: portrait) {
+    .hero-btns {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2rem;
+        padding-right: 5rem;
+    }
+
+    @media screen and (max-width: 550px) {
+        h1, h2 {
+            display: flex;
+            justify-content: flex-start;
+        }
         h1 {
             padding-top: 15rem;
             font-size: 3.5rem;
