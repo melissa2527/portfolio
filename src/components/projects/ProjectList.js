@@ -7,13 +7,15 @@ import './project.scss';
 export const ProjectList = () => {
 
     return (
-        <div className='card-container'>
-            <h1>Project List</h1>
-           {projectListData.map(project => {
-               return (
-                   <ProjectCard project={project}/>
-               )
-           })} 
+        <div className='page-container'>
+            <h2>Project List</h2>
+            <div className='card-container'>
+                {projectListData.map(project => {
+                return (
+                    <ProjectCard project={project}/>
+                )
+                })} 
+            </div>
         </div>
     )
 }

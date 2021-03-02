@@ -1,20 +1,18 @@
 import React, {useEffect} from 'react';
-import {Hero} from './Hero';
+import {Hero} from './hero/Hero';
 import AOS from 'aos';
 import './homepage.scss';
-import { ProjectSection } from './ProjectSection';
+import { ProjectSection } from './projectsection/ProjectSection';
 
 export const HomePage = () => {
 
     useEffect(() => {
-        AOS.init({
-            duration: 1500
-        })
+        AOS.init({duration: 1500})
     })
+
     return (
         <div>
             <Hero />
-            <ProjectSection />
             <div className='break'></div>
             <div className="semicircle">
                 <span className="half"></span>
@@ -40,6 +38,7 @@ export const HomePage = () => {
              <p>We deploy your product and now your website is ready to get the traction.  Get out there and grow your audience.</p>
         </div>
     </div>
+    <ProjectSection />
         </div>
     )
 }

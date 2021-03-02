@@ -49,7 +49,7 @@ export const Contact = () => {
     return (
         <div className='contact-container'>
     
-            <h1 data-aos='fade-down'>Contact Us</h1>
+            <h1 data-aos='fade-down'>Contact</h1>
             {
                 successMsg ? <div className='success'>Your message has been submitted!  Have a caffeinated day ☕</div> : 
                 errorMsg ? <div className='error'>There was an error. Please try again or call us.</div> : null

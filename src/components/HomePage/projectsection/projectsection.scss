@@ -1,5 +1,5 @@
 .project-container {
-    height: 100vh;
+    height: 90vh;
 
     .project--section {
         display: flex;
@@ -11,6 +11,7 @@
         img {
             height: 30rem;
             margin-top: 1.5rem;
+            margin-bottom: -11.5rem;
         }
     }
     .project--section-btns {
@@ -19,16 +20,26 @@
     }
 
     .right-arrow {
-        // position: relative;
-        // right: 40%;
         font-size: 3rem;
         z-index: 1;
         cursor: pointer;
         border-radius: 50px;
         border: none;
+        color: #232323;  
+    }
+    .right-arrow:hover, .left-arrow:hover {
+        color: whitesmoke;
+        background-color: #54BE90;
+    }
+
+    .right-arrow:focus, .left-arrow:focus {
+        outline: 0;
+    }
+
+    .right-arrow:active, .left-arrow:active {
         color: #232323;
     }
-    
+
     .left-arrow {
         font-size: 3rem;
         z-index: 1;
@@ -37,10 +48,16 @@
         border: none;
         color: #232323;
     }
+    
+    h2 {
+        margin: 3.75rem;
+        text-align: center;
+        font-size: 2.2rem;
+        text-decoration: 5px underline dotted #54BE90;
+    }
 }
 
 .slide {
-    // transition-duration: 1.5s ease-in-out;
     opacity: 0.5;
     z-index: 999;
 }
@@ -62,21 +79,35 @@
     }
 }
 
-h2 {
-    margin: 2.5rem;
-    text-align: center;
-    font-size: 2rem;
-}
-
 .project-info {
     text-align: center;
-    padding: 1rem;
+    margin-top: -1rem;
+    padding: 1.2rem;
     background-color: #54BE90;
     font-size: 120%;
+    margin-bottom: 0.5rem;
 
     a {
         text-decoration: none;
         color: whitesmoke;
         text-shadow: 1px 1px #232323;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .laptop, .title {
+        visibility: hidden;
+    }
+
+    .image {
+        width: 25rem;
+    }
+    .right-arrow, .left-arrow {
+        margin-top: 2rem;
     }
 }

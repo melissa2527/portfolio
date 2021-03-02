@@ -1,15 +1,3 @@
-// @media screen and (max-width: 700px) {
-//     .footer-items {
-//        justify-content: center;
-//        border: 3px solid red;
-//        width: 700px;
-//     }
-
-//     .item {
-//         margin: 0 -0.1rem;
-//     }
-// }
-
 .footer-container {
     background: #232323;
     color: whitesmoke;
@@ -48,6 +36,11 @@
         }
     }
 }
-    
-// }
 
+@media screen and (max-width: 700px) {
+    .footer-items {
+        display: flex;
+        width: 350px;
+       justify-content: center;
+    }
+}

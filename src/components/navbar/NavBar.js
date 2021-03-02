@@ -41,17 +41,21 @@ export const NavBar = () => {
                             </Link>
                         </li>
                         <li className='nav-item'>
+                            <Link to='/about' className='nav-link' onClick={closeMenuMobile}>
+                                About
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
                             <Link to='/projects' className='nav-link' onClick={closeMenuMobile}>
                                 Projects
                             </Link>
                         </li>
-                        <li className='nav-item'>
-                            <Link to='/contact' className='nav-link' onClick={closeMenuMobile}>
-                                Contact
-                            </Link>
-                        </li>
                     </ul>
-                    {button && <Button buttonSytle='btn--outline'>More Info</Button>}
+                    {button && <Button buttonSytle='btn--outline'>
+                        <Link to='/contact'>
+                            Contact
+                        </Link>
+                    </Button>}
                 </div>
             </nav>
         </>
