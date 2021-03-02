@@ -1,7 +1,20 @@
+// @media screen and (max-width: 700px) {
+//     .footer-items {
+//        justify-content: center;
+//        border: 3px solid red;
+//        width: 700px;
+//     }
+
+//     .item {
+//         margin: 0 -0.1rem;
+//     }
+// }
+
 .footer-container {
     background: #232323;
     color: whitesmoke;
     min-height: 30vh;
+    width: 100vw;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -19,10 +32,12 @@
     .footer-items {
         display: flex;
         justify-content: space-around;
+        width: 700px;
+        margin: 0 auto;
         
         .item {
             color: whitesmoke;
-            font-size: 2.5rem;
+            font-size: 2.75rem;
             transition: .2s ease-in-out;
         }
 
@@ -33,3 +48,6 @@
         }
     }
 }
+    
+// }
+

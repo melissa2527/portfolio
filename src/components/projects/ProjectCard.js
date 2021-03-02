@@ -1,9 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './project.scss';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export const ProjectCard = ({project}) => {
+
+    useEffect(() => {
+        Aos.init({
+            duration: 1500
+        }, [])
+    })
+
     return (
-        <div className='card'>
+        <div className='card' data-aos='fade-up'>
             <img src={project.image} alt={project.title} className='card-img'/>
             <h4>{project.title}</h4>
             <p>{project.tech}</p>

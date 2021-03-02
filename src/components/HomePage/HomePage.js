@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import {Hero} from './Hero';
 import AOS from 'aos';
 import './homepage.scss';
+import { ProjectSection } from './ProjectSection';
 
 export const HomePage = () => {
 
@@ -13,13 +14,14 @@ export const HomePage = () => {
     return (
         <div>
             <Hero />
+            <ProjectSection />
             <div className='break'></div>
             <div className="semicircle">
                 <span className="half"></span>
             </div>
             <div className="circles">
          <div className="circle1">
-            <h3>Discover</h3>
+            <h3>Frontend</h3>
             <p>Tell me about your project and we brainstorm together the features to create a plan for your product to launch.</p>
         </div>
 

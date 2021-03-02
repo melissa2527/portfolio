@@ -3,7 +3,9 @@ import {projectListData} from '../../projectListData';
 import {ProjectCard} from './ProjectCard';
 import './project.scss';
 
+
 export const ProjectList = () => {
+
     return (
         <div className='card-container'>
             <h1>Project List</h1>
