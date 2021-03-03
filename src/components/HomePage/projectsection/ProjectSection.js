@@ -30,7 +30,7 @@ export const ProjectSection = () => {
                     <div className={index === current ? 'slide-active' : 'slide'} key={index}>
                         {index === current && (
                             <div>
-                            <img src={image.image} alt='' className='image' height={253} width={450}/>
+                            <img src={image.image} alt='' className='image' height={235} width={420}/>
                             <p className='title'>{image.title}</p>
                             </div>
                         )}
