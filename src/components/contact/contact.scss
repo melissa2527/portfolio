@@ -1,0 +1,18 @@
+.contact-container::before {
+    height: 90vh;
+    width: 100vw;
+    background: url('./background.jpg');
+    opacity: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: '';
+    z-index: -10;
+}
+
+.contact-container {
+    height: 90vh;
+    width: 100vw;
+    opacity: 1;
+}

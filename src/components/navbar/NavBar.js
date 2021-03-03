@@ -51,8 +51,8 @@ export const NavBar = () => {
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonSytle='btn--outline'>
-                        <Link to='/contact'>
+                    {button && <Button buttonStyle='btn--outline'>
+                        <Link to='/contact' className='contact-btn'>
                             Contact
                         </Link>
                     </Button>}

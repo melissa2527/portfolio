@@ -164,3 +164,12 @@
       transition: 250ms;
     }
   }
+
+  .contact-btn {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .contact-btn:hover, .contact-btn:focus {
+    color: #232323;
+  }
