@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {techStackData} from './techStackData';
 import './techstack.scss';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export const TechStack = () => {
+
+    useEffect(() => {
+        Aos.init({duration: 1500})
+    }, [])
+
     return (
         <div className='techstack-container'>
             <h2>Tech Stack</h2>
@@ -13,8 +20,8 @@ export const TechStack = () => {
                             <div className='circle'>
                                 <div className='semi-circle'></div>
                             </div>
-                            <h4>{tech.category}</h4>
-                            <ul>{tech.subcategory.map(item => {
+                            <h4 data-aos='fade-up'>{tech.category}</h4>
+                            <ul data-aos='fade-up'>{tech.subcategory.map(item => {
                                 return (
                                     <li>{item}</li>
                                 )

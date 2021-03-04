@@ -15,9 +15,9 @@ export const HomePage = () => {
     return (
         <div>
             <Hero />
-            <ProjectSection />
-            <TechStack />
             <AboutSection/>
+            <TechStack />
+            <ProjectSection />
         </div>
     )
 }
