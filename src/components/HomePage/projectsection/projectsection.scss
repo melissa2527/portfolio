@@ -11,12 +11,17 @@
         img {
             height: 28rem;
             margin-top: 1.5rem;
-            margin-bottom: -11.5rem;
         }
     }
     .project--section-btns {
         display: flex;
         justify-content: space-around;
+
+        p {
+            font-size: 130%;
+            margin-top: 0.5rem;
+            color: #232323;
+        }
     }
 
     .right-arrow {
@@ -26,6 +31,7 @@
         border-radius: 50px;
         border: none;
         color: #232323;  
+        margin-bottom: 2rem;
     }
     .right-arrow:hover, .left-arrow:hover {
         color: whitesmoke;
@@ -47,6 +53,7 @@
         border-radius: 50px;
         border: none;
         color: #232323;
+        margin-bottom: 2rem;
     }
     
     h2 {

@@ -13,10 +13,10 @@ export const AboutSection = () => {
         <div className='aboutsection-container'>
             <h2>About Me</h2>
             <div className='about-info'>
-                <div className='about-img' data-aos='fade-left'>
+                <div className='about-img' data-aos='fade-right'>
                     <img src='/img/aboutme-photo.png' alt='melissa genger'/>
                 </div>
-                <div className='about-text' data-aos='fade-right'>
+                <div className='about-text' data-aos='fade-left'>
                     <img src='/img/about-me.jpg' alt='about section' width={450}/>
                 </div>
             </div>

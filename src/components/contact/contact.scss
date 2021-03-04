@@ -17,9 +17,27 @@
     opacity: 1;
 
     h2 {
-        margin: 3.75rem;
+        padding: 3.75rem;
         text-align: center;
         font-size: 2.2rem;
         text-decoration: 5px underline dotted #54BE90;
     }
+
+    form {
+        margin: 0 4rem;
+
+        .form-control {
+            width: 100%;
+            margin: 1rem 0;
+            min-height: 3rem;
+            font-size: 120%;
+        }
+    }
+
+    @media screen and (min-width: 800px) {
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    }  
 }

@@ -42,6 +42,7 @@ export const ProjectSection = () => {
             </div>
             <div className='project--section-btns'>
                 <button onClick={prevPicture} data-aos='fade-left' className='left-arrow'><i className="fas fa-arrow-left"></i></button>
+                <p>Click the arrows</p>
                 <button onClick={nextPicture} data-aos='fade-right' className='right-arrow'><i className="fas fa-arrow-right"></i></button>
             </div>
         
