@@ -4,6 +4,7 @@ import AOS from 'aos';
 import './homepage.scss';
 import { ProjectSection } from './projectsection/ProjectSection';
 import { TechStack } from './tech/TechStack';
+import { AboutSection } from './about/AboutSection';
 
 export const HomePage = () => {
 
@@ -16,6 +17,7 @@ export const HomePage = () => {
             <Hero />
             <ProjectSection />
             <TechStack />
+            <AboutSection/>
         </div>
     )
 }

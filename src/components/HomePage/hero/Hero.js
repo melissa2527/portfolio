@@ -28,8 +28,7 @@ export const Hero = () => {
                         {isShown ? 'SEE MORE' : 'SCROLL DOWN'}
                     </Button>
                 </div>
-                {/* <img clasName='background' src='img/background.jpg' alt='background' /> */}
             </div>
-    </div>
+        </div>
     )
 }

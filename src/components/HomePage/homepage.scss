@@ -17,7 +17,7 @@
     h1 {
         font-size: 5rem;
         color: whitesmoke;
-        padding-top: 20rem;
+        padding-top: 15rem;
         box-shadow: 2px 2px #54BE90;
     }
 
@@ -49,42 +49,4 @@
             margin-top: 1.5rem;
         }
     }
-}
-
-.circles {
-    display: flex;
-    justify-content: space-around;
-    padding: 5px;
-    flex-direction: row;
-    align-items: flex-end;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    background-color: #232323;
-    height: 50vh;
-}
-.circles h3 {
-    align-content: center;
-    justify-content: center;
-    color: #54BE90;
-}
-.circles p {
-    color: white;
-    padding: 5px;
-    line-height: 1.5;
-    padding-bottom: 20px;
-}
-.semicircle {
-    display: flex;
-    background-color: #232323;
-    flex-direction: row;
-}
-.half {
-    color: white;
-    height: 125px;
-    width: 250px;
-    border-radius: 0 0 125px 125px;
-    justify-items: flex-start; 
-    padding-left: 10vw;
-    padding-right: 10vw;
-    background-color: white;
 }
