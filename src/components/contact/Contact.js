@@ -3,7 +3,6 @@ import './contact.scss';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import emailjs from 'emailjs-com';
-import {Button} from '../Button';
 
 export const Contact = () => {
     const [successMsg, setSuccessMsg] = useState(false);
@@ -47,15 +46,9 @@ export const Contact = () => {
                     <textarea className='form-control' cols='30' rows='8' placeholder='Message' name='message'required/>
                 </div>
 
-                <Button
-                    type='Submit'
-                    className='btn'
-                    buttonStyle='btn--primary'
-                    buttonSize='btn--lge'
-                    value='Send message'
-                >Send Message
-                    {/* <input type='Submit' className='button' value='Send message'/> */}
-                </Button>
+                <div className='form-control' id='contact-btn'>
+                    <input type='Submit' className='button' value='Send message'/>
+                </div>
             </div>
         </form>
         </div>
