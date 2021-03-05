@@ -28,6 +28,7 @@ export const Contact = () => {
         <div className='contact-container'>
           <h2>Contact</h2>
           {successMsg ? <div className='success-msg'>Your message has been sent</div> : null }
+          <p data-aos='fade-down' className='project-info'>Send me an email via this contact form.</p>
         <form onSubmit={sendEmail}>
             <div className='form'>
                 <div className='form-group'>
