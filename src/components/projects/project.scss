@@ -91,3 +91,9 @@
         font-weight: bold;
     }
 }
+
+@media screen and (orientation: portrait) {
+    .card-container {
+        margin: 1rem;
+    }
+}
