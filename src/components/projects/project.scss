@@ -94,10 +94,21 @@
 
 @media screen and (orientation: portrait) {
     .card-container {
-        margin: 1rem;
+        margin: 0.3rem;
     }
 
     .card {
         margin: 1.5rem auto;
+        min-height: 100%;
+
+        .card-img {
+            margin-top: 0;
+            width: 19rem;
+            height: 10rem;
+        }
+
+        .card-info--links {
+            padding-bottom: 1rem;
+            }
     }
 }
