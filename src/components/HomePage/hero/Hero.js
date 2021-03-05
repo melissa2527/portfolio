@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import {Button} from '../../Button';
+import {Link} from 'react-router-dom';
 
 export const Hero = () => {
     const [isShown, setIsShown] = useState(true);
@@ -25,7 +26,11 @@ export const Hero = () => {
                         buttonStyle='btn--outline'
                         buttonSize='btn--lge'
                     >
-                        {isShown ? 'SEE MORE' : 'SCROLL DOWN'}
+                        <Link to='/projects' id='hero-btn'
+                        // style={{'text-decoration': 'none', 'color': 'whitesmoke'}}
+                        >
+                            {isShown ? 'SEE MORE' : 'SCROLL DOWN'}
+                        </Link>
                     </Button>
                 </div>
             </div>
