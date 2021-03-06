@@ -51,12 +51,15 @@
         h1 {
             padding-top: 11rem;
             font-size: 3.5rem;
-            box-shadow: none;
         }
 
         h2 {
             font-size: 1.75rem;
             margin-top: 1.5rem;
+        }
+
+        .hero-btns {
+            justify-content: flex-start;
         }
     }
 }
