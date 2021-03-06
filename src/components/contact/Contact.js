@@ -3,6 +3,7 @@ import './contact.scss';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import emailjs from 'emailjs-com';
+import {GMAIL, TEMPLATE, USERS} from '../../config';
 
 export const Contact = () => {
     const [successMsg, setSuccessMsg] = useState(false);
@@ -10,7 +11,7 @@ export const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_b7ppc7e', 'template_9x0vdbi', e.target, 'user_AACX6A2cAhpsiQTYgGUce')
+    emailjs.sendForm(GMAIL, TEMPLATE, e.target, USERS)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
