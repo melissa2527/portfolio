@@ -14,16 +14,16 @@ export const TechStack = () => {
         <div className='techstack-container'>
             <h2>Tech Stack</h2>
             <div className='techstack'>
-                {techStackData.map(tech => {
+                {techStackData.map((tech, index) => {
                     return (
-                        <div className='tech-section'>
+                        <div className='tech-section' key={index}>
                             <div className='circle'>
                                 <div className='semi-circle'></div>
                             </div>
                             <h4 data-aos='fade-up'>{tech.category}</h4>
                             <ul data-aos='fade-up'>{tech.subcategory.map(item => {
                                 return (
-                                    <li>{item}</li>
+                                    <li key={item}>{item}</li>
                                 )
                             })}
                             </ul>

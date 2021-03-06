@@ -7,7 +7,7 @@ import { AboutSection } from './about/AboutSection';
 
 export const HomePage = () => {
     return (
-        <div style={{'overflow-x': 'hidden'}}>
+        <div style={{'overflowX': 'hidden'}}>
             <Hero />
             <AboutSection/>
             <TechStack />
