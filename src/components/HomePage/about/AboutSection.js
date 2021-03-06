@@ -17,7 +17,7 @@ export const AboutSection = () => {
                     <img src='/img/aboutme-photo.png' alt='melissa genger'/>
                 </div>
                 <div className='about-text' data-aos='fade-left'>
-                    <img src='/img/about-me.jpg' alt='about section' width={450}/>
+                    <img src='/img/about-me.jpg' alt='about section' />
                 </div>
             </div>
         </div>

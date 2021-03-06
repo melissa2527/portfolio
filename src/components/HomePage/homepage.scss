@@ -1,5 +1,5 @@
 .homepage-container {
-    height: 90vh;
+    height: 92vh;
     width: 100vw;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url('./background.jpg');
     // background-image: url('./background.jpg');
@@ -44,13 +44,14 @@
     }
 
     @media screen and (max-width: 650px) {
-        h1, h2 {
+        .homepage-container h1, h2 {
             display: flex;
             justify-content: flex-start;
         }
         h1 {
             padding-top: 11rem;
             font-size: 3.5rem;
+            box-shadow: none;
         }
 
         h2 {
