@@ -8,18 +8,24 @@
     overflow: hidden;
     margin: 1.5rem;
     background: whitesmoke;
-    // background: #232323;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
+    .img-container {
+        width: 23rem;
+        height: 12rem;
+        overflow: hidden;
+        
+    }
     .card-img {
         width: 23rem;
         height: 12rem;
     }
     .card-img:hover {
         opacity: 0.9;
+        transform: scale(1.1);
     }
 
     h4 {
