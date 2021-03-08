@@ -31,7 +31,6 @@
         border-radius: 50px;
         border: none;
         color: #232323;  
-        // margin-bottom: 2rem;
     }
     .right-arrow:hover, .left-arrow:hover {
         color: whitesmoke;
@@ -53,7 +52,6 @@
         border-radius: 50px;
         border: none;
         color: #232323;
-        // margin-bottom: 2rem;
     }
     
     h2 {
@@ -74,11 +72,9 @@
     opacity: 1;
     position: absolute;
     margin-top: 8.4rem;
-    // margin-top: 4.9rem;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    // transition-duration: 1s;
     transition-timing-function: ease-in-out;
     
     .title {

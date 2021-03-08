@@ -4,6 +4,7 @@ import './homepage.scss';
 import { ProjectSection } from './projectsection/ProjectSection';
 import { TechStack } from './tech/TechStack';
 import { AboutSection } from './about/AboutSection';
+import { Contact } from '../contact/Contact';
 
 export const HomePage = () => {
     return (
@@ -11,6 +12,7 @@ export const HomePage = () => {
             <Hero />
             <AboutSection/>
             <TechStack />
+            <Contact/>
             <ProjectSection />
         </div>
     )
